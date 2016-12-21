@@ -1,0 +1,111 @@
+{% load static %}
+<button class="chat-menu-button">More chatrooms</button>
+
+<button class="join-button" id="id_join_{{ pk }}">
+{% if not in_room %}Join{% else %}Leave{% endif %}
+</button>
+<div class="chat-info-div">
+	<div class="chat-info-upper">
+		<div class="chat-info-upper-right">
+			<div class="">
+				<h1>{{ name }}</h1>
+			</div>
+			<div>
+				<h6>{{ description }}</h6>
+			</div>
+		</div>
+		<div class="chat-info-upper-left">
+			<img class="chatroom-image" src="{{ chatroom.image }}">
+
+			{% if is_admin == True or is_creator == True %}
+			<form class="form-inline" id="image-form-chat" action="{% url 'upload-chat-image' chatroom.pk %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+			    <p>
+			    	<div class="button-container-chatroom">
+				        <input id="id_image_chatroom" type="file" class=button name="image">
+				    </div>
+			    </p>
+			</form>			
+			{% endif %}
+		</div>
+
+	</div>
+
+	<div class="chat-info-lower">
+		<div class="chat-info-lower-left">
+			<h4>Chat members</h4>
+			<ul>
+				{% for user in users %}
+				<li id="{{ chatroom.pk }}{{ user.user.username }}">
+					<img src={{ user.image }}>
+					{{ user.user.username }}
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="chat-info-lower-right">
+			<h4>Statistics</h4>
+			<ul>
+				<li><h6>
+						Members:<span class="value">{{ user_count }}</span>
+						</h6></li>
+				<li><h6>
+						Created at:<span class="value">{{ created_at }}</span>
+				</h6></li>
+				<li><h6>
+						Total messages:<span class="value">{{ message_count }}</span>
+				</h6></li>
+				<li><h6>
+						Average messages per day:<span class="value">{{ avg_daily_msgs|floatformat }}</span>
+				</h6></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	$("#id_image_chatroom").change(function() {
+		$("#image-form-chat").submit();
+
+		$.get("/chatroom/"+"{{ pk }}/", function(data) {
+			$(".modal-content").html(data);
+		})
+	})
+
+	var prev1;
+	$.get("/chatroom/"+"{{ pk }}/", function(data) {
+		prev1 = data;
+	})
+
+	$(".chat-menu-button").click(function(e) {
+		$.get("{% url 'room-join-menu' %}", function(data) {
+			$(".modal-content").html(data);
+		})
+	})
+
+	{% for user in users %}
+	$("#{{ chatroom.pk }}{{ user.user.username }}").click(function() {
+		$.get("profile/{{ user.user.username }}/", function(data) {
+			$(".modal-content").html(data)
+			$(".back-btn-modal-profile").css("display", "block")
+			$(".back-btn-modal-profile").click(function(e) {
+				$(".modal-content").html(prev1);
+			})
+		})
+	})
+	{% endfor %}
+
+	$("#id_join_{{ pk }}").click(function() {
+		{% if not in_room %}
+		$.get("{% url 'join-chatroom' id=pk %}")
+		{% else %}
+		$.get("{% url 'leave-chatroom' id=pk %}")
+		$("#myModal").css("display", "none");
+		$("#{{ pk }}").remove();
+		$("#chat_area").html(choose);
+		$(".write-section").css("display", "none");
+        $(".chat-name-bar").css("display", "none");
+		{% endif %}
+	})
+</script>

@@ -1,0 +1,30 @@
+{% load static %}
+   {% if messages.exists %}
+   {% for message in messages %}
+         <li class="message row">
+            <span>
+               <img src={{ message.author.image }} class="{{ message.author.user.username }} pointer">
+            </span>
+            <span id="message-span">
+               <div>
+               <h5>{{ message.text }}</h5>
+               </div>
+            </span>
+            <span class="timestamp">{{ message.created_at|date:"o-m-d H:i:s" }}</span>
+
+         </li>
+   {% endfor %}       
+   {% else %}
+   <div class="text-center" id="no-messages-{{ id }}"><i>No messages yet!</i></div>
+   {% endif %}  
+
+<script type="text/javascript">
+   {% for chatuser in users %}
+   $(".{{ chatuser.user.username }}").click(function() {
+      $.get(window.location.href + "profile/{{ chatuser.user.username }}/", function(data) {
+         $(".modal-content").html(data);
+      })
+      modal.style.display = "block";
+   })
+   {% endfor %}
+</script>
