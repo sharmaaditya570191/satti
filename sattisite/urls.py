@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from satti import views
+from satti import views, settings
 from django.contrib.auth import views as auth_views
 from django.conf.urls import url, include
-from django.conf import settings
+from django.conf import settings as conf_settings
 
 urlpatterns = [
     url(r'^$', views.main),
@@ -42,12 +42,16 @@ urlpatterns = [
     url(r'^private/(?P<username>\w+)/', views.private_chat, name="private-chat"),
     url(r'^list/', views.chat_list_json, name="chat-list-json"),
     url(r'^info/(?P<id>[0-9]{1,4})/', views.chat_info_json, name="chat-info-json"),
-    url(r'^chat-list-item/(?P<pk>[0-9]{1,4})/', views.render_chat_list_item, name="chat-list-item")
-
+    url(r'^chat-list-item/(?P<pk>[0-9]{1,4})/', views.render_chat_list_item, name="chat-list-item"),
 ]
+
+urlpatterns += patterns('',
+        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+    )
+
 from django.conf import settings
 from django.conf.urls.static import static
 
-if settings.DEBUG:
+if conf.settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
