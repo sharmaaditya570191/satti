@@ -45,6 +45,6 @@ urlpatterns = [
     url(r'^chat-list-item/(?P<pk>[0-9]{1,4})/', views.render_chat_list_item, name="chat-list-item"),
 ]
 
-urlpatterns += patterns('',
+urlpatterns += url('',
         (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
     )
