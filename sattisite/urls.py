@@ -19,6 +19,7 @@ from satti import views
 from django.contrib.auth import views as auth_views
 from django.conf.urls import url, include
 from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^$', views.main),
@@ -43,8 +44,4 @@ urlpatterns = [
     url(r'^list/', views.chat_list_json, name="chat-list-json"),
     url(r'^info/(?P<id>[0-9]{1,4})/', views.chat_info_json, name="chat-info-json"),
     url(r'^chat-list-item/(?P<pk>[0-9]{1,4})/', views.render_chat_list_item, name="chat-list-item"),
-]
-
-urlpatterns += url('',
-        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
-    )
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
