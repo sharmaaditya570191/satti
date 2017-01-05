@@ -28,7 +28,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'lgrc@(m@3cc*&6r)yeki+209#6#ql4#3ura31fczs3=f2d#pn$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['morning-meadow-59619.herokuapp.com']
 
