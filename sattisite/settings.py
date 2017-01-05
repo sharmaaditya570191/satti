@@ -150,3 +150,6 @@ CHANNEL_LAYERS = {
         "ROUTING": "satti.routing.channel_routing",
     },
 }
+
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
