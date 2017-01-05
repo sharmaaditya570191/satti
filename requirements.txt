@@ -24,3 +24,4 @@ virtualenvwrapper==4.7.2
 whitenoise==3.2.3
 zope.interface==4.3.2
 dj-database-url==0.4.1
+asgi-redis==1.0.0
