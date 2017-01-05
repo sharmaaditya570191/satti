@@ -17,7 +17,6 @@ pyxdg==0.25
 requests==2.12.3
 six==1.10.0
 stevedore==1.19.1
-team==1.0
 Twisted==16.5.0
 txaio==2.5.2
 zope.interface==4.3.2
