@@ -199,8 +199,7 @@ def chatroom(request, id):
 		"in_room": in_room,
 		"creator": chatroom.creator.user.username
 		}
-	return render(request, 'templates/chatroom.html', context = {**context, 
-		**stats})
+	return render(request, 'templates/chatroom.html', context = {**context, **stats})
 
 def image(request, username):
 	chatuser = get_chatuser(User.objects.get(username=username))
