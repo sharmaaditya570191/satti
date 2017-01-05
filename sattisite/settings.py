@@ -140,7 +140,10 @@ LOGIN_URL = '/login/'
 
 CHANNEL_LAYERS = {
     "default": {
-        "BACKEND": "asgiref.inmemory.ChannelLayer",
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
+        },
         "ROUTING": "satti.routing.channel_routing",
     },
 }
