@@ -7,7 +7,6 @@ daphne==0.15.0
 Django==1.10.3
 gunicorn==19.6.0
 incremental==16.10.1
-lxml==3.7.0
 packaging==16.8
 pbr==1.10.0
 Pillow==3.4.2
