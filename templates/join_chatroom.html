@@ -1,19 +1,23 @@
 <div class="join-room">
-	<div class="heading">
-		<h2>Joinable chatrooms</h2>
-		<h6>Click on a room name to see info and join</h6>
+	<div class="join-room-bar">
+		<div class="heading">
+			<h2>Joinable chatrooms</h2>
+			<h6>Click on a room name to see info and join</h6>
+		</div>
 	</div>
-
 	{% if joinable_rooms %}
+	<div class="joinable-list">
 	<ul>
 		{% for room in joinable_rooms %}
 		<li id="joinable-{{ room.pk }}"><img src="{{ room.image }}">{{ room.name }}</li>
 		{% endfor %}
 	</ul>
+	</div>
 	{% else %}
 	<div class="text-center">
 	<i>Whoops! Looks like you have already joined all the possible rooms.</i>
 	</div>
+	<ul>
 	{% endif %}
 </div>
 

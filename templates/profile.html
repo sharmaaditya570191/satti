@@ -58,6 +58,8 @@
 
 	$("#id_private_{{ username }}").click(function() {
 		$.get("{% url 'private-chat' username=username %}")
-			
+		setTimeout(function() {
+			window.location.reload();
+		}, 10);
 	})
 </script>

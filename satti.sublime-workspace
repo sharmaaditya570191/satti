@@ -1,0 +1,1771 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mess",
+				"messages"
+			],
+			[
+				"padd",
+				"padding: "
+			],
+			[
+				"Chat",
+				"ChatMessage"
+			],
+			[
+				"notii",
+				"notification"
+			],
+			[
+				"color",
+				"color-last-seen"
+			],
+			[
+				"min",
+				"min-width: "
+			],
+			[
+				"chaut",
+				"chatuser"
+			],
+			[
+				"paddi",
+				"padding-right: "
+			],
+			[
+				"max-",
+				"max-width: "
+			],
+			[
+				"max",
+				"max-width: "
+			],
+			[
+				"v",
+				"View"
+			],
+			[
+				"Messa",
+				"messages"
+			],
+			[
+				"iso",
+				"iso_timestamp"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
+				"cha",
+				"chat_list"
+			],
+			[
+				"is_",
+				"is_admin"
+			],
+			[
+				"padding",
+				"padding-top: "
+			],
+			[
+				"colo",
+				"color-timestamp"
+			],
+			[
+				"margin",
+				"margin: "
+			],
+			[
+				"ali",
+				"align-self: "
+			],
+			[
+				"bo",
+				"border: "
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"room",
+				"room_id"
+			],
+			[
+				"a",
+				"author"
+			],
+			[
+				"Cha",
+				"ChatUser"
+			],
+			[
+				"users",
+				"users"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"color-",
+				"color-border"
+			],
+			[
+				"bord",
+				"border-bottom: "
+			],
+			[
+				"list-",
+				"list-style-type: "
+			],
+			[
+				"al",
+				"align-items: "
+			],
+			[
+				"borde",
+				"border-color: "
+			],
+			[
+				"ba",
+				"background-color: "
+			],
+			[
+				"paddin",
+				"padding-left: "
+			],
+			[
+				"message",
+				"message_text"
+			],
+			[
+				"roo",
+				"roomDict"
+			],
+			[
+				"tu",
+				"True"
+			],
+			[
+				"chat",
+				"chat_list"
+			],
+			[
+				"tex",
+				"text-center"
+			],
+			[
+				"creta",
+				"created_at"
+			],
+			[
+				"onl",
+				"online_count"
+			],
+			[
+				"cre",
+				"created_at"
+			],
+			[
+				"get",
+				"get_chatuser"
+			],
+			[
+				"chat_list",
+				"chat_list_item"
+			],
+			[
+				"date",
+				"date"
+			],
+			[
+				"crea",
+				"created_at"
+			],
+			[
+				"Cat",
+				"ChatUser"
+			],
+			[
+				"rece",
+				"receiver"
+			],
+			[
+				"get_",
+				"get_chatuser"
+			],
+			[
+				"id_",
+				"id_private_"
+			],
+			[
+				"cot",
+				"context"
+			],
+			[
+				"app",
+				"appendMessage"
+			],
+			[
+				"id",
+				"id_description"
+			],
+			[
+				"bor",
+				"border-style"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"back-btn-modal",
+				"back-btn-modal-chatroom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"moda",
+				"modal"
+			],
+			[
+				"wdi",
+				"width"
+			],
+			[
+				"oveflo",
+				"overflow"
+			],
+			[
+				"marin",
+				"margin-left"
+			],
+			[
+				"auto",
+				"autofocus\tAttr"
+			],
+			[
+				"tex-",
+				"text-form"
+			],
+			[
+				"ro",
+				"room_id"
+			],
+			[
+				"Ch",
+				"ChatUser"
+			],
+			[
+				"creat",
+				"creator"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"mes",
+				"message_count"
+			],
+			[
+				"chatroo",
+				"chatroom"
+			],
+			[
+				"PRIF",
+				"PROFILE_TEXT"
+			],
+			[
+				"chatro",
+				"chatroom_id"
+			],
+			[
+				"profi",
+				"profile_text"
+			],
+			[
+				"h4",
+				"h4-text"
+			],
+			[
+				"HttpR",
+				"HttpResponse"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"pro",
+				"profile-text"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"Http",
+				"HttpResponse"
+			],
+			[
+				"ca",
+				"chatuser"
+			],
+			[
+				"inline",
+				"inline"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"hex_",
+				"hex_array"
+			],
+			[
+				"hex",
+				"hex_array"
+			],
+			[
+				"modal",
+				"modal-content"
+			],
+			[
+				"chatu",
+				"chatuser"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"my",
+				"my_profile"
+			],
+			[
+				"bak",
+				"back-btn"
+			],
+			[
+				"bac",
+				"back-btn"
+			],
+			[
+				"send",
+				"send_button"
+			],
+			[
+				"transi",
+				"transition-duration"
+			],
+			[
+				"padi",
+				"padding-left"
+			],
+			[
+				"mart",
+				"margin-top"
+			],
+			[
+				"sml",
+				"smaller"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"pfo",
+				"profile"
+			],
+			[
+				"messa",
+				"messages"
+			],
+			[
+				"mesa",
+				"messages"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"col-",
+				"col-lg-6"
+			],
+			[
+				"col-lg",
+				"col-lg-6"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"sidebar",
+				"sidebar-nav"
+			],
+			[
+				"aut",
+				"auth_login"
+			],
+			[
+				"auth",
+				"authenticate"
+			],
+			[
+				"page",
+				"page-content-wrapper"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"channel_session_",
+				"channel_session_user_from_http"
+			],
+			[
+				"channe",
+				"channel_session"
+			],
+			[
+				"chann",
+				"channel_session"
+			],
+			[
+				"ch",
+				"channel_session"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "templates/newest_index.html",
+			"settings":
+			{
+				"buffer_size": 1929,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "satti.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/chatroom.html",
+			"settings":
+			{
+				"buffer_size": 3561,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "satti/consumers.py",
+			"settings":
+			{
+				"buffer_size": 4801,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/janne/disobey.py",
+			"settings":
+			{
+				"buffer_size": 243,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "from lxml import html"
+			}
+		},
+		{
+			"contents": "TEKSTI COMENNOT !!!!!\n\nHEROKU\n\nnotifikaatiot\nHIGHLIGHTS\nEND TO END DECRYPTION\ntextarea max size",
+			"file": "/home/janne/jannesite/todo",
+			"file_size": 95,
+			"file_write_time": 131271013440923318,
+			"settings":
+			{
+				"buffer_size": 95,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/main.js",
+			"settings":
+			{
+				"buffer_size": 6992,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/janne/.pg_service.conf",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/etc/postgresql/pg_service.conf",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<li class=\"pointer {% if chat.private %}private_{{ chat.name }}{% endif %}\" id={{ chat.pk }}>\n\t<img class=\"thumb\" src={{ chat.img_url }}>\n\t<div class=\"chat-info\">\n\t\t<h5><b>{{ chat.name }}</b>\n\t\t<span class=\"timestamp\" id=\"id_timestamp_{{ chat.pk }}\">{% if chat.has_msg %}{{ chat.last_msg_time }}{% endif %}</span></h5>\n\t\t<h6><span class=\"msg\" id=\"latest{{ chat.pk }}\">\n\t\t{% if chat.has_msg %}{{ chat.last_msg_author }}: {{ chat.last_msg_text }}\n\t\t{% else %}<i>no messages</i>\n\t\t{% endif %}</span>\n\t\t</h6>\n\t</div>\t\n</li>",
+			"file": "/home/janne/jannesite/templates/chat_list_item.html",
+			"file_size": 559,
+			"file_write_time": 131274431341217342,
+			"settings":
+			{
+				"buffer_size": 519,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "var socket = new Backbone.WS(\"ws://\" + window.location.host);\n\nvar ChatRoom = Backbone.Model.extend({\n\turlRoot: '/chat'\n\tdefaults: {\n\t\tid: -1,\n\t\tname: '',\n\t\tmessages: new MessageList(),\n\t\ttyped : ''\n\t}\n})\n\nvar ChatRoomList = Backbone.Collection.extend({\n\tmodel: Chatroom\n})\n\nvar Message = Backbone.Model.extend({\n\tdefaults: {\n\t\ttext: '',\n\t\tauthor: '',\n\t\ttime: ''\n\t}\n})\n\nvar MessageList = Backbone.Collection.extend({\n\tmodel: Message\n})\n\n// View for items in the sidebar chat list\nvar ChatRoomView = Backbone.View.extend({\n\n})\n\n// View for rendering messages\nvar MessageView = Backbone.View.extend({\n\n})\n// The dispatcher listens to WS, works out message type and content,\n// and triggers the right event on the corresponding ChatRoom\nvar Dispatcher = Backbone.Model.extend({\n\tdefaults: {\n\t\trooms = new ChatRoomList();\n\t}\n})\n\n// Main view\nvar App = Backbone.View.extend({\n\tel: $(\"#content\"),\n\n\tinitialize: function(){\n\n\t}\n})",
+			"file": "/home/janne/jannesite/templates/main_new.js",
+			"file_size": 923,
+			"file_write_time": 131274343390420688,
+			"settings":
+			{
+				"buffer_size": 923,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "from channels.routing import route\nfrom satti.consumers import ws_add, ws_message, ws_disconnect\n\nchannel_routing = [\n    route(\"websocket.connect\", ws_add),\n    route(\"websocket.receive\", ws_message),\n    route(\"websocket.disconnect\", ws_disconnect),\n]",
+			"file": "/home/janne/jannesite/satti/routing.py",
+			"file_size": 253,
+			"file_write_time": 131230890603438219,
+			"settings":
+			{
+				"buffer_size": 253,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% load static %}\n<script type=\"text/javascript\">\n   {% for chatuser in users %}\n   $(\".{{ chatuser.user.username }}\").click(function() {\n      $.get(window.location.href + \"profile/{{ chatuser.user.username }}/\", function(data) {\n         $(\".modal-content\").html(data);\n      })\n      modal.style.display = \"block\";\n   })\n   {% endfor %}\n</script>\n\n   {% if messages.exists %}\n   {% for message in messages %}\n   {% if message.notification == True %}\n   <li class=\"room-notify\"><b>{{ message.text }}</b></li>\n   {% else %}\n   <li class=\"message\">\n      <span>\n         <img src=\"/image/{{ message.author }}/\" class=\"pointer {{ message.author }}\"></span><span class=\"message-span\">\n         <div><h5 id=\"id_message_{{ message.pk }}\">{{ message.text }}</h5></div>\n         </span>\n         <span class=\"timestamp\">{{ message.created_at|date:\"o-m-d H:i:s\" }}</span>\n         </li>\n   {% endif %}\n   {% endfor %}\n   {% else %}\n   <div class=\"text-center\" id=\"no-messages-{{ id }}\"><i>No messages yet!</i></div>\n   {% endif %}  ",
+			"file": "/home/janne/jannesite/templates/new_chat.html",
+			"file_size": 1025,
+			"file_write_time": 131271070883732583,
+			"settings":
+			{
+				"buffer_size": 1025,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<div class=\"join-room\">\n\t<div class=\"join-room-bar\">\n\t\t<div class=\"heading\">\n\t\t\t<h2>Joinable chatrooms</h2>\n\t\t\t<h6>Click on a room name to see info and join</h6>\n\t\t</div>\n\t</div>\n\t{% if joinable_rooms %}\n\t<div class=\"joinable-list\">\n\t<ul>\n\t\t{% for room in joinable_rooms %}\n\t\t<li id=\"joinable-{{ room.pk }}\"><img src=\"{{ room.image }}\">{{ room.name }}</li>\n\t\t{% endfor %}\n\t</ul>\n\t</div>\n\t{% else %}\n\t<div class=\"text-center\">\n\t<i>Whoops! Looks like you have already joined all the possible rooms.</i>\n\t</div>\n\t<ul>\n\t{% endif %}\n</div>\n\n<script type=\"text/javascript\">\n\t{% for room in joinable_rooms %}\n\t$(\"#joinable-{{ room.pk }}\").click(function() {\n\t\tprev = $(\".modal-content\").html()\n\t\t$.get(window.location.href + 'chatroom/{{ room.pk }}/', function(data) {\n\t\t\t$(\".modal-content\").html(data);\n\t\t\t$(\".back-btn-modal-chatroom\").css(\"display\", \"block\")\n\t\t\t$(\".back-btn-modal-chatroom\").click(function(e) {\n\t\t\t\t$(\".modal-content\").html(prev);\n\t\t\t})\n\t\t})\n\t})\n\t{% endfor %}\n</script>\n",
+			"file": "/home/janne/jannesite/templates/join_chatroom.html",
+			"file_size": 982,
+			"file_write_time": 131269729614392898,
+			"settings":
+			{
+				"buffer_size": 982,
+				"line_ending": "Unix",
+				"name": "<ul>"
+			}
+		},
+		{
+			"contents": "<div class=\"new-chat-div\">\n<h2>New chatroom</h2>\n<form id=\"new-chat-form\" enctype=\"multipart/form-data\" action=\"/create/\" method=\"post\">\n\t{% csrf_token %}\n\t<table>\t{{ form.as_table }}</table>\n\t<input type=\"submit\" value=\"Create\"/>\n</form>\n</div>\n\n<script type=\"text/javascript\">\n\t$(\"#id_description\").focus(function(e) {\n\t\t$(\"#id_description\").val(\"\")\n\t\t$(\"#id_description\").css(\"color\", \"black\")\n\t})\n\t$(\"#new-chat-form\").on('submit', function(e) {\n\t\te.preventDefault();\n\t\tsetTimeout(function() {\n\t\t\twindow.location.reload();\n\t\t}, 10);\n\t\tthis.submit();\n\t\t})\n\t\n</script>",
+			"file": "/home/janne/jannesite/templates/create_chatroom.html",
+			"file_size": 569,
+			"file_write_time": 131268751076681633,
+			"settings":
+			{
+				"buffer_size": 569,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": ".menu {\n\theight: 100%;\n\tfloat: left;\n\tposition: relative;\n\twidth: 25%;\n}\n\n.chat-area {\n\twidth: 75%;\n\tfloat: left;\n\tposition: relative;\n\tbackground-color: $bg;\t\n}\n\n.nav-top {\n\theight: 5%;\n\tmin-height: 50px;\n\tbackground-color: black;\n\tposition: fixed;\n\twidth: 100%;\n}\n\n.content {\n\tposition: absolute;\n\ttop: 50px;\n\tbottom: 0px;\n\twidth: 100%;\n}\n\n\n@media screen and (max-width: 640px) {\n\t.chat-area {\n\t\tdisplay: none;\n\t}\n\n\t.back-btn {\n\t\tdisplay: inline;\n\t}\n}\n\nbody {\n\tbackground-color: #f8f8f8;\n}\n\n.back-btn {\n\tposition: absolute;\n\twidth: 80px;\n\tpadding-top: 10px;\n\tdisplay: none;\n\tz-index: 1;\n}\n\n.content {\n\tposition: absolute;\n\ttop: 50px;\n\tbottom: 0px;\n\twidth: 100%;\n}\n\n.content-row {\n\theight: 100%;\n\ttop: 0px;\n\tbottom: 0px;\n}\n\n.menu ul {\n\tlist-style-type: none;\n\tpadding: 0;\n\toverflow-y: auto;\n\theight: 95%;\n}\n\n.menu ul li {\n\tpadding: 15px 8px;\n\tmargin: 0;\n\theight: 80px;\n\tdisplay: flex;\n\tbackground-color: #ffffff;\n\toverflow: hidden;\n\tborder-bottom: 1px solid #eeeeee;\n\n}\n\n.menu ul li:hover {\n\tbackground-color: #6eb5c0;\n\n}\n.chat-area {\n\theight: 100%;\n\tpadding-left: 0;\n\tpadding-right: 0;\n\tbackground-color: #deeff5;\n}\n\n#messages li {\n\tmargin-left: 5px !important;\n\tmargin-right: 5px !important;\n\tmargin-top: 10px;\n\tmargin-bottom: 10px;\n}\n\n#messages li div {\n\tpadding-right: 5px;\n\tpadding-left: 5px;\n\tmargin-left: 5px;\n\tborder-radius: 10px;\n\tmin-width: 30%;\n\tmax-width: 80%;\n\tmargin-top: 5px;\n\tpadding-left: 5px;\n\tfloat: left;\n\tbackground-color: #fff;\n    box-shadow: 2px 2px 5px #888888;\n}\n\n.message-section {\n\theight: 85%;\n\toverflow: auto;\n\twidth: 100%;\n\toverflow-x: hidden;\n\n}\n\n.write-section {\n\tborder-top: 1px solid #3b3a36;\n\twidth: 100%;\n\theight: 10%;\n\tdisplay: none;\n\tposition: absolute;\n\tbottom: 0;\n}\n\n.chat-info {\n\tfloat: left;\n\theight: 100%;\n\twidth: 50%;\n\tflex-grow: 2;\n\tpadding-left: 10px;\n}\n\n.menu ul li img {\n\twidth: 50px;\n\theight: 50px;\n\tfloat: left;\n\tborder-radius: 50%\n}\n\n.menu ul li h5,h6 {\n\twidth: 100%;\n\tmargin-bottom: 5px;\n}\n\n.menu ul li h6 .msg {\n\n}\n\n.timestamp {\n\tfloat:right;\n\tfont-size: smaller;\n\tcolor: #666;\n}\n\n.chat-input {\n\twidth: 80%;\n\theight: 100%;\n\tfloat: left;\n\tresize: none;\n}\n\n.send-button {\n\twidth: 20%;\n\theight: 100%;\n\tbackground-color: white;\n\tcolor: black;\n}\n\n.send-button:hover {\n\tbackground-color: #6eb5c0;\n}\n\n.navbar-container {\n\tpadding-right: 15px;\n\n}\n\n /* The Modal (background)\n copypasted from w3schools.com */\n\n.modal {\n    display: none; /* Hidden by default */\n    position: absolute; /* Stay in place */\n    z-index: 1; /* Sit on top */\n\n    width: 100%; /* Full width */\n    height: 100%; /* Full height */\n    overflow: auto; /* Enable scroll if needed */\n    background-color: rgb(0,0,0); /* Fallback color */\n    background-color: rgba(126,126,126,0.8); /* Black w/ opacity */\n\n}\n\n/* Modal Content/Box */\n.modal-content {\n    background-color: #deeff5;\n    border: 1px solid #888;\n    width: 80vh;\n    height: 80vh;\n    top: 50%;\n    left: 50%;\n    margin-top: -40vh;\n    margin-left: -40vh;\n}\n/* The Close Button */\n.close {\n    color: #aaa;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n    color: black;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n.chat-name-bar {\n\theight: 5%;\n\twidth: 100%;\n\tdisplay: none;\n\tbackground-color: #ffccbb;\n}\n\n.room-name {\n\theight: 50px;\n\tfloat: left;\n\tpadding: 15px 10px;\n\tposition: relative;\n\twidth: 100%;\n}\n\n.room-name div {\n\tfloat: right;\n\tcolor: #999;\n}\n.navbar-top {\n\tbackground-color: #006c84;\n\theight: 5% !important;\n}\n\n.navbar-top a, p {\n\tcolor: #ffccbb !important;\n}\n\n#messages li img {\n\twidth: 30px;\n\theight: 30px;\n\tborder-radius: 50%;\n\ttop: 50%;\n\tmargin-top: -30px;\n\tposition: relative;\n}\n\n.navbar-link, .room-name {\n\tcursor: pointer;\n}\n\n\n.message {\n\tmargin: 0px 5px;\t\n}\n\n.message span {\n\tdisplay: inline-block;\n\tmax-width: 85%;\n}\n\n.message-span {\n\tmin-width: 30%;\n}\n\n.profile-content {\n\ttext-align: center;\n\tpadding: 50px;\n\toverflow: hidden;\n}\n\n.profile-image img {\n\twidth: 40%;\n\tmargin: auto;\n\tdisplay: inline-block;\n\n}\n\n.profile-text {\n\ttext-align: left;\n\twidth: 60%;\n\tmargin: 0 auto;\n\tdisplay: flex;\n}\n\n.pointer {\n\tcursor: pointer;\n}\n\n.profile-text form {\n\twidth: 100%;\n\theight: 100%;\n}\n\n#text-input {\n\twidth: 100%;\n\theight: 100%;\n}\n\n.profile-username {\n\tpadding: 25px;\n}\n\n\n.profile-image form input {\n\tmax-width: 50px;\n}\n\n\nform, :not(#new-chat-div form) {\n\tdisplay: inline-block;\n\tmargin: auto;\n\twidth: 25px;\n\theight: 25px;\n}\n\n.chat-info-upper-left form {\n\tposition: absolute;\n\ttop: 15px;\n\tright: 30px;\n\twidth: 30px !important;\n\theight: 30px !important;\n}\n\n.button {\n\tbackground: transparent;\n\tborder: none;\n}\n\n.profile-image {\n\tposition: relative;\n\ttext-align: left;\n\tleft: 30%;\n\toverflow: hidden;\n}\n\n.button-container, .button-container-chatroom {\n\tbackground: transparent url(/static/images/wrench.png) left top no-repeat;\n\tbackground-size: 25px 25px;\n\topacity: 0.4;\n}\n\n.button-container:hover, .button-container-chatroom:hover {\n\topacity: 1;\n}\n\n.button-container,\n.button-container input {\n\theight: 25px;\n\twidth: 25px;\n}\n\n.button-container input, .button-container-chatroom input {\n\topacity: 0;\n\tcursor: pointer;\n}\n\n.profile-text-inner {\n\twidth: 80%;\n\tdisplay: inline-block;\n\tvertical-align: middle;\n}\n\n.profile-text span {\n\tvertical-align: middle;\n\tdisplay: inline-block;\n}\n\n#text-input {\n\tresize: none;\n\tfont-size: 18px;\n\tline-height: 1.1;\n\tmargin-top: 10px;\n\tmargin-bottom: 10px;\n\tfont-weight: 500;\n\tborder-style: none;\n}\n\n.chat-info-upper {\n\twidth: 100%;\n\theight: 50%;\n\tposition: relative;\n\toverflow-x: hidden;\n\toverflow-y: hidden;\n\tborder-bottom: 1px solid #eeeeee\n}\n\n.chat-info-upper h1, .chat-info-lower h4 {\n\ttext-align: center;\n}\n\n.chat-info-upper-left img {\n\twidth: 90%;\n\tmax-height: 90%;\n\tposition: relative;\n\tleft: 5%;\n\ttop: 5%;\n\tborder: 2px solid #aaaaaa;\n\tcursor: pointer;\n}\n\n.chat-info-upper-left img:hover {\n\tborder: 2px solid #000000;\n}\n\n.chat-info-div {\n\twidth: 80%;\n\theight: 80%;\n\tleft: 10%;\n\tposition: relative;\n\ttop: 10%;\n}\n\n.chat-info-upper-right {\n\twidth: 50%;\n\theight: 100%;\n\tfloat: right;\n\tpadding-left: 30px;\n}\n\n.chat-info-upper-left {\n\twidth: 50%;\n\tfloat: left;\n\tposition: relative;\n\tmax-height: 100%;\n}\n\n.chat-info-lower {\n\theight: 50%;\n\twidth: 100%;\n}\n\n.chat-info-lower-left {\n\twidth: 50%;\n\tfloat: left;\n\theight: 100%;\n}\n\n.chat-info-lower-right {\n\twidth: 50%;\n\tfloat: left;\n\theight: 100%;\n}\n\n.chat-info-lower li {\n\theight: 40px;\n\tdisplay: flex;\n\talign-items: center;\n}\n\n.chat-info-lower-right li {\n\tpadding-left: 30px;\n\theight: 20px;\n}\n\n.chat-info-lower ul {\n\tlist-style-type: none;\n\tpadding: 0;\n\toverflow: auto;\n}\n\n.chat-info-lower-left ul {\n\tborder: 1px solid #444444;\n\tbackground-color: white;\n}\n\n.chat-info-lower h4 {\n\theight: 10%;\n}\n\n.chat-info-lower-left li img {\n\twidth: 30px;\n\theight: 30px;\n\tborder-radius: 50%;\n\tmargin: 0px 5px;\n}\n\n.chat-info-lower-left li:hover {\n\tbackground-color: #6eb5c0;\n\tcursor: pointer;\n}\n\n.chat-info-lower-left li {\n\tborder-bottom: 1px solid #eeeeee;\n}\n\n.value {\n\tfloat: right;\n}\n\n.edit-icon {\n\tposition: absolute;\n\twidth: 30px !important;\n\theight: 30px;\n\ttop: 15px;\n\tright: 15px;\n\tborder-style: none !important;\n\topacity: 0.0;\n}\n\n.edit-icon:hover {\n\topacity: 1.0;\n}\n\n.chatroom-image:hover + .edit-icon-image {\n\topacity: 0.5;\n}\n\n.button-container-chatroom {\n\tposition: absolute;\n\tbackground: transparent url(/static/images/wrench.png) left top no-repeat;\n\tbackground-size: 30px 30px;\n\twidth: 30px;\n\theight: 30px;\n\topacity: 0.4;\n\toverflow: hidden;\n}\n\n.button-container-chatroom button {\n\topacity: 0;\n}\n\n.chat-name-bar img {\n\twidth: 30px;\n\theight: 30px;\n\tposition: absolute;\n\ttop:50%;\n\tmargin-top: -15px;\n\tborder-radius: 15px;\n}\n\n.chat-name-bar b {\n\tposition: absolute;\n\tleft: 50px;\n\twidth: 50%;\n}\n\n.room-actions {\n\tposition: absolute;\n\tbottom: 0%;\n\twidth: 100%;\n\theight: 5%;\n}\n\n.room-actions button {\n\tbackground-color: white;\n\tcolor: black;\n\tborder: 2px solid #6eb5c0;\n    -webkit-transition-duration: 0.2s; /* Safari */\n    transition-duration: 0.2s;\n    width: 50%;\n    float: left;\n    height: 100%;\n}\n\n.room-actions button:hover {\n\tbackground-color: #6eb5c0;\n}\n\n.new-chat-div {\n\twidth: 80%;\n\theight: 80%;\n\tposition: relative;\n\tleft: 10%;\n\ttop: 10%;\n}\n\n#submit-new-chat {\n\tposition: absolute;\n\tbottom: 0;\n\tright: 0;\n}\n\n#chat-name-input {\n\tdisplay: block;\n}\n\n#chat-description-input {\n\tdisplay: block;\n\tresize: none;\n}\n\n#chat-image-input {\n\tdisplay: block;\n}\n\n.join-room ul li {\n\theight: 50px;\n\tdisplay: flex;\n\talign-items: center;\n\tcursor: pointer;\n\tborder-bottom: 1px solid #eeeeee;\n}\n\n.join-room ul li:hover {\n\tbackground-color: #6eb5c0;\n}\n\n.join-room ul li img {\n\twidth: 50px;\n\theight: 50px;\n\tfloat: left;\n\tborder-radius: 50%;\n\tposition: relative;\n}\n\n.joinable-list {\n\tmax-height: 90%;\n\tborder: 1px solid #444444;\n\toverflow: auto;\n\tbackground-color: white;\n\n}\n\n.join-room ul {\n\tlist-style-type: none;\n\tpadding: 0;\n\tmargin: 0;\n}\n\n.join-room {\n\twidth: 80%;\n\theight: 80%;\n\tleft: 10%;\n\ttop: 10%;\n\tposition: relative;\n}\n\n.back-btn-modal {\n\tposition: absolute;\n\tdisplay: none;\n\ttop: 15px;\n\tleft: 15px;\n\theight: 50px;\n\twidth: 50px;\n\tz-index: 1;\n\topacity: 0.5;\n\tcursor: pointer;\n}\n\n.back-btn-modal:hover {\n\topacity: 1;\n}\n\n#id_description {\n\twidth: 100%;\n\tresize: none;\n}\n\n#new-chat-form {\n\tpadding-top: 20px;\n}\n\n#new-chat-form table {\n\twidth: 100%;\n}\n\n#new-chat-form tr {\n\twidth: 100%;\n}\n\n#new-chat-form input[type=submit] {\n\tposition: absolute;\n\tbottom: 0;\n\tright: 0;\n}\n\n#new-chat-form table th {\n\twidth: 30%;\n}\n\n#new-chat-form table td {\n\twidth: 50%;\n}\n\n.new-chat-div h2 {\n\ttext-align: center;\n\tpadding-bottom: 20px;\n\tborder-bottom: 1px solid #eeeeee;\n}\n\n\n.join-button {\n\tposition: absolute;\n\ttop: 15px;\n\tright: 15px;\n\tfont-size: 20px;\n\theight: 50px;\n\ttext-align: center;\n\tbackground-color: white;\n\tborder: 1px solid #aaa;\n\tborder-radius: 10px;\n}\n\n.join-button:hover {\n\tbackground-color: #aaa;\n}\n\n.chat-menu-button {\n\tposition: absolute;\n\ttop: 15px;\n\tleft: 15px;\n\tfont-size: 20px;\n\theight: 50px;\n\tbackground-color: white;\n\tborder: 1px solid #aaa;\n\tborder-radius: 10px;\n}\n\n.chat-menu-button:hover {\n\tbackground-color: #aaa;\n}\n\n.heading {\n\ttext-align: center;\n\theight: 10%;\n}\n\n.text-center {\n\ttext-align: center;\n\tposition: absolute;\n\ttop: 50%;\n\twidth: 100%;\n\tpadding: 10px;\n}\n\n.text-center i {\n\tcolor: #888888;\n}\n\n#id_description {\n\tcolor: #888888;\n}\n\n",
+			"file": "/home/janne/jannesite/satti/static/css/newest.css",
+			"file_size": 10175,
+			"file_write_time": 131269925481970730,
+			"settings":
+			{
+				"buffer_size": 10175,
+				"line_ending": "Unix",
+				"name": ".navbar .divider-vertical {"
+			}
+		},
+		{
+			"contents": "from django import forms\nfrom .models import ChatRoom\n\nclass ImageUploadForm(forms.Form):\n\timage = forms.ImageField()\n\nclass RoomCreationForm(forms.ModelForm):\n\tclass Meta:\n\t\tmodel = ChatRoom\n\t\tfields = ['name', 'description', 'image']",
+			"file": "/home/janne/jannesite/satti/forms.py",
+			"file_size": 235,
+			"file_write_time": 131263533934166823,
+			"settings":
+			{
+				"buffer_size": 235,
+				"line_ending": "Unix",
+				"name": "class ImageUploadForm(forms.Form):"
+			}
+		},
+		{
+			"contents": "{% load static %}\n\n<img class=\"back-btn-modal-profile back-btn-modal\" src=\"{% static \"images/back.png\" %}\">\n\n<div class=\"profile-content\">\n\t{% if not request.user.username == username %}\n\t<button id=\"id_private_{{ username }}\" class=\"join-button\">Message</button>\n\t{% endif %}\n\t<div class=\"profile-image\">\n\t\t<img src=\"{{ chatuser.image }}\">\n\t\t{% if chatuser.user == request.user %}\n\t\t<form class=\"form-inline\" id=\"image-form\" action=\"{% url 'upload-image' %}\" method=\"post\" enctype=\"multipart/form-data\">{% csrf_token %}\n\t\t    <p>\n\t\t    \t<div class=\"button-container\">\n\t\t\t        <input id=\"id_image\" type=\"file\" class=button name=\"image\">\n\t\t\t    </div>\n\t\t    </p>\n\t\t</form>\n\t\t{% endif %}\n\t</div>\n\t<div class=\"profile-username\">\n\t\t<h1>{{ chatuser.user.username }}</h1>\n\t</div>\n\t\n\t<div class=\"profile-text\">\n\t\t\t\n\t\t\t\t{% if chatuser.user == request.user %}\n\t\t\t\t<form class=\"form-inline\" id=\"text-form\" action=\"{% url 'text' %}\" method=\"post\" enctype=\"multipart/form-data\">{% csrf_token %}\n\t\t\t\t\t<textarea id=\"text-input\" name=\"text\" form=\"text-form\">{{ chatuser.profile_text }}</textarea>\n\t\t\t\t</form>\n\t\t\t\t\t{% else %}\n\t\t<h4 id=\"h4-text\">{{ chatuser.profile_text }}</h4>\n\t\t{% endif %}\n\t</div>\n\n</div>\n\n<script>\n\n\t$(\"#text-input\").width($(\"#h4-text\").width())\n\t$(\"#text-input\").height($(\"#h4-text\").height())\n\n\t$(\"#id_image\").change(function() {\n\t\t$(\"#image-form\").submit()\n\t\t$.get(window.location.href\n\t\t + \"profile/\" + '{{ request.user.username }}' \n\t\t + \"/\", function(data) {\n\t\t \t\t$(\".modal-content\").html(data);\n\t\t })\n\n\t\t})\n\t$(document).keypress(function(e) {\n\t\tif(e.which==13) {\n\t\t\te.preventDefault()\n\t\t\t$(\"#text-form\").submit()\n\t\t\t}\n\t\t})\n\n\t$(\"#id_private_{{ username }}\").click(function() {\n\t\t$.get(\"{% url 'private-chat' username=username %}\")\n\t\tsetTimeout(function() {\n\t\t\twindow.location.reload();\n\t\t}, 10);\n\t})\n</script>",
+			"file": "/home/janne/jannesite/templates/profile.html",
+			"file_size": 1822,
+			"file_write_time": 131269659333108248,
+			"settings":
+			{
+				"buffer_size": 1822,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "satti/models.py",
+			"settings":
+			{
+				"buffer_size": 3255,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"\"\"jannesite URL Configuration\n\nThe `urlpatterns` list routes URLs to views. For more information please see:\n    https://docs.djangoproject.com/en/1.10/topics/http/urls/\nExamples:\nFunction views\n    1. Add an import:  from my_app import views\n    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')\nClass-based views\n    1. Add an import:  from other_app.views import Home\n    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')\nIncluding another URLconf\n    1. Import the include() function: from django.conf.urls import url, include\n    2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))\n\"\"\"\nfrom django.conf.urls import url\nfrom django.contrib import admin\nfrom satti import views\nfrom django.contrib.auth import views as auth_views\nfrom django.conf.urls import url, include\nfrom django.conf import settings\n\nurlpatterns = [\n    url(r'^$', views.main),\n    url(r'^admin/', admin.site.urls),\n    url(r'^chat/(?P<id>[0-9]{1,4})/', views.chat),\n    url('^', include('django.contrib.auth.urls')),\n    url(r'^signin/$', views.login),\n    url(r'^signout/$', views.logout),\n    url(r'^profile/(?P<username>\\w+)/', views.profile),\n    url(r'^chatroom/(?P<id>[0-9]{1,4})/', views.chatroom, name=\"chatroom-menu\"),\n    url(r'^image/(?P<username>\\w+)/', views.image),\n    url(r'^menu/', views.room_menu),\n    url(r'^upload/', views.upload_image, name=\"upload-image\"),\n    url(r'^upload-chat/(?P<id>[0-9]{1,4})/', views.upload_chat_image, name=\"upload-chat-image\"),\n    url(r'^text/', views.change_profile_text, name=\"text\"),\n    url(r'^create/', views.create_chatroom, name=\"create-chatroom\"),\n    url(r'^new-room/', views.room_create_menu, name=\"room-create-menu\"),\n    url(r'^join-room/', views.room_join_menu, name=\"room-join-menu\"),\n    url(r'^join/(?P<id>[0-9]{1,4})/', views.join_chatroom, name=\"join-chatroom\"),\n    url(r'^leave/(?P<id>[0-9]{1,4})/', views.leave_chatroom, name=\"leave-chatroom\"),\n    url(r'^private/(?P<username>\\w+)/', views.private_chat, name=\"private-chat\"),\n    url(r'^list/', views.chat_list_json, name=\"chat-list-json\"),\n    url(r'^info/(?P<id>[0-9]{1,4})/', views.chat_info_json, name=\"chat-info-json\"),\n    url(r'^chat-list-item/(?P<pk>[0-9]{1,4})/', views.render_chat_list_item, name=\"chat-list-item\")\n\n]\nfrom django.conf import settings\nfrom django.conf.urls.static import static\n\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+			"file": "/home/janne/jannesite/jannesite/urls.py",
+			"file_size": 2537,
+			"file_write_time": 131268902281311609,
+			"settings":
+			{
+				"buffer_size": 2537,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"\"\"\nDjango settings for jannesite project.\n\nGenerated by 'django-admin startproject' using Django 1.10.2.\n\nFor more information on this file, see\nhttps://docs.djangoproject.com/en/1.10/topics/settings/\n\nFor the full list of settings and their values, see\nhttps://docs.djangoproject.com/en/1.10/ref/settings/\n\"\"\"\n\nimport os\n\n# Build paths inside the project like this: os.path.join(BASE_DIR, ...)\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n\nMEDIA_ROOT_DIR = ''\nMEDIA_ROOT = os.path.normpath(os.path.join(BASE_DIR, MEDIA_ROOT_DIR))\nMEDIA_URL = '/'\n\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/\n\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'lgrc@(m@3cc*&6r)yeki+209#6#ql4#3ura31fczs3=f2d#pn$'\n\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n\nALLOWED_HOSTS = ['192.168.1.34', 'localhost']\n\n\n# Application definition\n\nINSTALLED_APPS = [\n    'satti.apps.SattiConfig',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'channels',\n]\n\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\n\nROOT_URLCONF = 'jannesite.urls'\n\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [''],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',\n            ],\n        },\n    },\n]\n\nWSGI_APPLICATION = 'jannesite.wsgi.application'\n\n\n# Database\n# https://docs.djangoproject.com/en/1.10/ref/settings/#databases\n\nDATABASES = {\n    'sqlite': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),\n    },\n\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql_psycopg2',\n        'NAME': 'satti',\n        'USER': 'janne',\n        'PASSWORD': 'hevosetkarkaa',\n        'HOST': 'localhost',\n        'PORT': '',\n    }\n}\n\n\n# Password validation\n# https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators\n\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',\n    },\n]\n\n\n# Internationalization\n# https://docs.djangoproject.com/en/1.10/topics/i18n/\n\nLANGUAGE_CODE = 'en-us'\n\nTIME_ZONE = 'UTC'\n\nUSE_I18N = True\n\nUSE_L10N = True\n\nUSE_TZ = False\n\n\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/1.10/howto/static-files/\n\nSTATIC_URL = '/static/'\n\nLOGIN_URL = '/login/'\n\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"asgiref.inmemory.ChannelLayer\",\n        \"ROUTING\": \"satti.routing.channel_routing\",\n    },\n}\n\n",
+			"file": "/home/janne/jannesite/jannesite/settings.py",
+			"file_size": 3681,
+			"file_write_time": 131275172442484380,
+			"settings":
+			{
+				"buffer_size": 3681,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "import os\nimport channels.asgi\n\nos.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"jannesite.settings\")\nchannel_layer = channels.asgi.get_channel_layer()",
+			"file": "/home/janne/jannesite/jannesite/asgi.py",
+			"file_size": 151,
+			"file_write_time": 131269706429743342,
+			"settings":
+			{
+				"buffer_size": 151,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "satti/static/css/styles.scss",
+			"settings":
+			{
+				"buffer_size": 7164,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 376.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"Package",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/janne/sattisite"
+	],
+	"file_history":
+	[
+		"/home/janne/tobuy",
+		"/home/janne/sattisite/satti/static/js/jquery.js",
+		"/home/janne/.bashrc",
+		"/home/janne/.Xdefaults",
+		"/home/janne/.fehbg",
+		"/home/janne/i3lock/PKGBUILD",
+		"/home/janne/sublime-text-nightly/PKGBUILD",
+		"/home/janne/.xinitrc",
+		"/home/janne/.devilspie/opacity.ds",
+		"/home/janne/sattisite/templates/main.js",
+		"/home/janne/sattisite/satti/views.py",
+		"/home/janne/sattisite/registration/login.html",
+		"/home/janne/disobey2",
+		"/home/janne/.i3/config.save",
+		"/home/janne/satti.sh",
+		"/home/janne/jannesite/satti/static/css/styles.css",
+		"/home/janne/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/janne/jannesite/satti/static/css/styles.scss",
+		"/home/janne/jannesite/satti/static/css.styles.scss",
+		"/home/janne/saetti/jannesite/jannesite/settings.py",
+		"/home/janne/saetti/jannesite/jannesite/urls.py",
+		"/home/janne/saetti/jannesite/satti/views.py",
+		"/home/janne/saetti/jannesite/jannesite/templates/chat",
+		"/home/janne/buffer1.c",
+		"/home/janne/.config/zathura/zathurarc",
+		"/home/janne/smartly.py",
+		"/home/janne/jannesite/.gitignore",
+		"/home/janne/jannesite/satti/static/css/pajeet.css",
+		"/home/janne/cv_janne_karjalainen.pdf",
+		"/home/janne/.config/i3/config",
+		"/home/janne/jannesite/satti/consumers.py",
+		"/home/janne/jannesite/templates/new_chat.html",
+		"/home/janne/disobey",
+		"/home/janne/jannesite/templates/room_menu.html",
+		"/home/janne/striimi",
+		"/home/janne/pashare.sh",
+		"/home/janne/bootstrap-chat-example/assets/css/bootstrap.css",
+		"/home/janne/jannesite/satti/static/css/bootstrap.css",
+		"/home/janne/jannesite/satti/static/css/navbar-fixed-top.css",
+		"/home/janne/jannesite/satti/static/css/simple-sidebar.css",
+		"/home/janne/jannesite/satti/static/css/sticky-footer.css",
+		"/home/janne/jannesite/templates/index.html",
+		"/home/janne/jannesite/satti/static/css/signin.css",
+		"/home/janne/jannesite/templates/chat.html",
+		"/home/janne/bootstrap-3.3.7/docs/examples/navbar-fixed-top/index.html",
+		"/home/janne/jannesite/templates/login.html",
+		"/home/janne/jannesite/se",
+		"/home/janne/bootstrap-3.3.7/docs/examples/sticky-footer/index.html",
+		"/home/janne/bootstrap-3.3.7/docs/examples/signin/index.html",
+		"/home/janne/jannesite/satti/apps.py",
+		"/home/janne/jannesite/satti/routing.py",
+		"/home/janne/ads",
+		"/home/janne/eclipse/eclipse.ini",
+		"/home/janne/startup.sh",
+		"/home/janne/.cache/dmenu_run",
+		"/home/janne/.bash_profile",
+		"/etc/bash.bashrc",
+		"/etc/locale.gen",
+		"/home/janne/jannesite/sätti/views.py",
+		"/home/janne/jannesite/sätti/models.py",
+		"/home/janne/jannesite/ur",
+		"/home/janne/.xbindkeysrc",
+		"/home/janne/Downloads/R3_123456_LASTNAME_FIRSTNAME.txt",
+		"/home/janne/Downloads/R2_429461_KARJALAINEN_JANNE",
+		"/etc/X11/xorg.conf.d/70-synaptics.conf",
+		"/etc/X11/xorg.conf.d/30-touchpad.conf"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"baer",
+			"trak",
+			"effect",
+			"effec",
+			"effect",
+			"main",
+			"banned",
+			"send",
+			"ban",
+			"join(",
+			"join",
+			"banning in",
+			"ban",
+			"sendroom",
+			"join",
+			"sendroom",
+			"join",
+			"open_room",
+			"room",
+			"open_Room",
+			"open_room",
+			"message",
+			"white-list",
+			"pointer",
+			"messages",
+			"join",
+			"sendroom",
+			"join",
+			"sendroom",
+			"sendroomm",
+			"sendroomac",
+			"send",
+			"click",
+			"sendadmin",
+			"sendRoomAction",
+			"sendadmin",
+			"button-ban",
+			"tooltip",
+			"chat-info-lower",
+			"tooltip",
+			"button-ban",
+			"for user",
+			"room_join_menu",
+			"room_join_",
+			"join-room",
+			"join",
+			"chat_list",
+			"rooms",
+			"ban",
+			"created_at",
+			"image",
+			"databa",
+			"chat_list",
+			"chat_list_item",
+			"chat_list",
+			"id_ban",
+			"sendadmi",
+			"ban",
+			"'",
+			"textare",
+			"button",
+			"write-sec",
+			"nav-top",
+			"timestamp",
+			"timestamp'",
+			"timestamp",
+			"chat_info",
+			"new_",
+			"chatroom. ",
+			"chatroom.",
+			"chatroom",
+			"chatroom, user",
+			"join",
+			"join-r",
+			"ul",
+			"chat-info-lower",
+			"room",
+			"chat-",
+			"ban",
+			"button-ban",
+			"button-bn",
+			"BUTTON-BAN",
+			"join",
+			"for user",
+			"back-btn",
+			"medium",
+			"menu",
+			"men",
+			"ban",
+			"notify",
+			"message",
+			"ban",
+			"socket.sen",
+			"ban",
+			"chatroom(req",
+			"chatroom",
+			"for user",
+			"boom",
+			"text-center",
+			"room-n",
+			"text-ce",
+			"message",
+			"ban",
+			"ban-b",
+			"absolute",
+			"ban",
+			"ban-",
+			"profile",
+			"if",
+			"open-roo",
+			"message-sec",
+			"create_",
+			"create",
+			"chatroom",
+			"add",
+			".click",
+			"handlemessa",
+			"onmessage",
+			"ffa500",
+			"room{{ room.pk }}",
+			"room{{",
+			".messages",
+			"roomdict",
+			"area",
+			"message_text",
+			"if(\"con",
+			"if(\"dis",
+			"if(\"con"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"roomDict[{{ room.pk }}]",
+			"ChatMessage"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "templates/newest_index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								436,
+								436
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "satti.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/chatroom.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3561,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1072,
+								1072
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "satti/consumers.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3646,
+								3646
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/janne/disobey.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								139
+							]
+						],
+						"settings":
+						{
+							"auto_name": "from lxml import html",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/janne/jannesite/todo",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2171,
+								2171
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 972.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/janne/.pg_service.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/etc/postgresql/pg_service.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/janne/jannesite/templates/chat_list_item.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								392,
+								392
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/janne/jannesite/templates/main_new.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/home/janne/jannesite/satti/routing.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/home/janne/jannesite/templates/new_chat.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								510,
+								510
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/home/janne/jannesite/templates/join_chatroom.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 982,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								971,
+								971
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<ul>",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/home/janne/jannesite/templates/create_chatroom.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/home/janne/jannesite/satti/static/css/newest.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7591,
+								7591
+							]
+						],
+						"settings":
+						{
+							"auto_name": ".navbar .divider-vertical {",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 8110.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/home/janne/jannesite/satti/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class ImageUploadForm(forms.Form):",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/home/janne/jannesite/templates/profile.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1798,
+								1798
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "satti/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2666,
+								2666
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 960.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/home/janne/jannesite/jannesite/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1727,
+								1727
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/home/janne/jannesite/jannesite/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2531,
+								2531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1058.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/home/janne/jannesite/jannesite/asgi.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "satti/static/css/styles.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3600,
+								3600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax-highlighting-for-Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3994.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "satti.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,45 +1,120 @@
 <script type="text/javascript">
-   var username = "{{ request.user.username }}"
-   var i;
-   var messages = ''
+$(document).ready(function() {
 
-   function room(id) {
+  var username = "{{ request.user.username }}"
+  var i;
+  var messages = ""
+  var socket = new WebSocket("ws://" + window.location.host);
+
+  $(".msg").dotdotdot({});
+
+  socket.onmessage = function(e) {
+    data = JSON.parse(e.data);
+    room = data.room
+    
+    if("connect" in data) {
+     $.get("info/"+room+"/", function(data){
+      $("#id_online_"+room).html(data.online)
+      })
+     return;
+    };
+    if("disconnect" in data) {
+      $.get("info/"+room+"/", function(data){
+        $("#id_online_"+room).html(data.online)
+        })
+      return;
+    }
+    else {
+      roomDict[room].handleMessage(e.data);
+      }
+    }
+
+  function sendRoomAction(action, room, target) {
+    var msg = {
+      room: room,
+      type: action,
+      target: target
+    }
+    socket.send(JSON.stringify(msg));
+  }
+
+  function appendMessage(html) {
+    $("#messages").append(html);
+    var objDiv = document.getElementById("chat_area");
+    objDiv.scrollTop = objDiv.scrollHeight;
+  }
+
+  function room(id) {
     this.id = id
-    this.socket = new WebSocket("ws://" + window.location.host 
-      + "/chat/" + id + "?username=" + username);
-    this.messages = ''
+    this.socket = socket;
+    this.messages = ""
+    this.typed = ""
     var self = this;
-    $.get(window.location.href + "chat/" + this.id + "/", function(data) {
+    $.get("chat/" + this.id + "/", function(data) {
       self.messages += data;
     })
 
-    this.appendMessage = function(html) {
-      $("#messages").append(html);
-      var objDiv = document.getElementById("chat_area");
-      objDiv.scrollTop = objDiv.scrollHeight;
-    }
-
     this.handleMessage = function(data) {
-      data = JSON.parse(data);
       date = new Date().toISOString()
-      var html = '<li class="message row">'
-      + '<span><img src='
-      + window.location.href + 'image/' + data.user +
-      '/ class=pointer ' + data.user + '></span>'
-      + '<span id="message-span"><div><h5>'
-      + data.content + '</h5></div>'
-      + '</span><span class="timestamp">'
-      + date.slice(0,10) + ' ' + date.slice(11,19) + '</span>'
-      this.messages += html
+      data = JSON.parse(data);
+      type = data.type;
+      date = new Date().toISOString()
+      
+      switch(type) {
+        case "message": {
+          $("#no-messages-"+this.id).css("display", "none");
+          var html = `<li class="message"><span><img src=`
+          + `${window.location.href}image/${data.user}/`
+          + `class="pointer ${data.user}"></span>`
+          + `<span class="message-span"><div><h5>`
+          + `${data.content}</h5></div>`
+          + `</span><span class="timestamp">`
+          + `${date.slice(0,10)} ${date.slice(11,19)}</span>`
+          
+          this.messages += html
 
-      $("#latest"+this.id).html(data.user + ': ' + data.content)
+          $("#latest"+this.id).html(data.user + ': ' + data.content)
 
-      if(i==this.id) {         
-        this.appendMessage(html);
+          if(i==this.id) {         
+            appendMessage(html);
+          } else {
+            $("#"+this.id).effect("highlight", {color: '#add8e6'}, 2000);
+          }
+          $("#"+this.id).parent().prepend($("#"+this.id))
+          $("#id_timestamp_"+this.id).html(date.slice(11,16))
+          break;
+        }
+        case "ban": {
+          $("#no-messages-"+this.id).css("display", "none");
+          var html = `<li class="room-notify"><b>`
+                     + `${data.user} got banned!</b></li>`
+          this.messages += html
+          $("#latest"+this.id).html(`${data.user} got banned!`)
+          $("#"+this.id).parent().prepend($("#"+this.id))
+          $("#id_timestamp_"+this.id).html(date.slice(11,16))
+          if(i==this.id) {         
+            appendMessage(html);
+          }
+          break;
+        }
+
+        case "join": {
+          $("#no-messages-"+this.id).css("display", "none");
+          var html = `<li class="room-notify"><b>${data.user} joined the room`
+                    + `</b></li>`
+          this.messages += html;
+          $("#latest"+this.id).html(`${data.user} joined the room`);
+          $("#"+this.id).parent().prepend($("#"+this.id))
+          $("#id_timestamp_"+this.id).html(date.slice(11,16))
+          if(i==this.id) {         
+            appendMessage(html);
+          }
+          break;
       }
-      $("#"+this.id).parent().prepend($("#"+this.id))
     }
     
+
+    }
     this.sendMessage = function() {
       var txt = $("#message_text").val()
       if(txt != '') {
@@ -48,32 +123,29 @@
           room: this.id,
           msg: txt
         }
-        this.socket.send(JSON.stringify(msg));
+        socket.send(JSON.stringify(msg));
         $("#latest"+this.id).html("{{ request.user }}" + ': ' + txt);
         $("#message_text").val('');
       }
-    }
-
-    this.socket.onmessage = function(e) {
-      self.handleMessage(e.data);
-      $("#no-messages-"+self.id).css("display", "none");
-    }
-
-    
-   }
+  } 
+}
 
    var my_profile = '';
    var choose = $("#id_choose");
-   
-   {% for room in rooms %}
+   var roomDict = {}
+   {% for room in chats %}
 
-   var room{{ room.pk }} = new room({{ room.pk }})
+   roomDict[{{ room.pk }}] = new room({{ room.pk }});
 
    $("#{{ room.pk }}").click(function(e) {
-
         e.preventDefault();
+        if (i != null) {
+          roomDict[i].typed = $("#message_text").val()
+        }
         i = {{ room.pk }};
+        $("#message_text").val(roomDict[{{ room.pk }}].typed)
 
+        sendRoomAction("open", {{ room.pk }}, "");
 
         if($(window).width() <= 640) {
         	$(".menu").css("display", "none")
@@ -82,22 +154,22 @@
         }
         
         $("#chat_area").html('<ul class="list-unstyled" id="messages">'
-            + room{{ room.pk }}.messages
+            + roomDict[{{ room.pk }}].messages
             + '   </ul>');
         
         var objDiv = document.getElementById("chat_area");
         objDiv.scrollTop = objDiv.scrollHeight;
 
         $("#send_button").off("click").click(function(e) {
-          room{{ room.pk }}.sendMessage();
+          roomDict[{{ room.pk }}].sendMessage();
         });
 
         $("#message_text").focus();
         $(".write-section").css("display", "block")
-        $(".chat-name-bar").css("display", "block")
-        $(".chat-name-bar").html("<div class='room-name'" + 
-          " id='room-name-{{ room.pk }}'><img src={{ room.image }}><b>{{ room.name }}" + 
-          "</b></div>")
+        $(".open-room-bar").css("display", "block")
+        $(".open-room-bar").html("<div class='bar-content'" + 
+          " id='room-name-{{ room.pk }}'><img src={{ room.img_url }}><b>{{ room.name }}" + 
+          "</b><div id='id_online_{{ room.pk }}'>{{ room.online }}</div></div>")
 
    		$("#room-name-{{ room.pk }}").click(function(e) {
    			e.preventDefault();
@@ -112,23 +184,16 @@
     
     {% endfor %}
 
-	
+    //send message with enter key
 
-    $(document).keypress(function(e){
-    if ((e.which == 13 && !e.shiftKey) && 
-      $(".modal").css("display")=="none"){
-        e.preventDefault();
-        $("#send_button").click();
-    }
-});
-
-    $(".back-btn").click(function(e) {
-    	$(".menu").css("display", "inline")
-    	$(".chat-area").css("display", "none")
-    	$(".back-btn").css("display", "none")
-    })
-
-    // Get the modal
+    $(document).keypress(function(e) {
+      if ((e.which == 13 && !e.shiftKey) && 
+        $(".modal").css("display")=="none"){
+          e.preventDefault();
+          $("#send_button").click();
+          }
+    });
+  
 	var modal = document.getElementById('myModal');
 	
 
@@ -160,11 +225,16 @@
 	    }
 	}
 
+
+// close modal on esc
+
 $(document).keydown(function(e) {
   if(e.keyCode == 27) {
   $(".modal").css("display", "none")
   }
 })
+
+// open room join menu
 
 $("#button-join-room").click(function() {
   $.get("{% url 'room-join-menu' %}", function(data) {
@@ -173,11 +243,15 @@ $("#button-join-room").click(function() {
   })
 })
 
+// open room create menu
+
 $("#button-create-room").click(function() {
   $.get("{% url 'room-create-menu' %}", function(data) {
     $(".modal-content").html(data);
     modal.style.display="block";
   })
+})
+
 })
 
 </script>

@@ -3,34 +3,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="{% static "js/jquery.js" %}"></script>
-	<script src="{% static "js/bootstrap.min.js" %}"></script>
+
 	<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
-	<link rel="stylesheet" type="text/css" href="{% static "css/newest.css" %}">
-	<title>kakak</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+	<title>Että näin</title>
 
 </head>
 <body>
+<script src="{% static "js/jquery.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/jquery.dotdotdot.min.js" %}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+{% include "templates/main.js" %}
 
-	<nav class="navbar navbar-default navbar-fixed-top navbar-top">
-		<div class="navbar-container">
+	<nav class="nav-top">
 			<div class="navbar-header">
-				<a class="navbar-brand">Sätti</a>
+				<div>Sätti</div>
 			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-
-				<p class="navbar-text navbar-right">
+			<div class="navbar">
+				<p>
 					Signed in as
-					<a class="navbar-link" id="profile">{{ request.user }}</a>
-					<a href="/signout/" class="navbar-link">Logout</a>
+					<a id="profile">{{ request.user }}</a>
+					<a href="/signout/">Logout</a>
 				</p>
-
 			</div>
-
-		</div>
 	</nav>
 
-	<div class="container content">
+	<div class="content">
 		<div id="myModal" class="modal">
 		<span class="close">&times;</span>
   		<!-- Modal content -->
@@ -38,35 +37,27 @@
 	  		</div>
 
 		</div>
-		<img class="back-btn" src="{% static "images/back.png" %}">
-		<div class="row content-row">
-			<div class="col-sm-3 menu" id="menu">
+			<div class="menu" id="menu">
 				<ul>
-					{% for room in rooms %}
-					<li id={{ room.pk }}>
-						<img class="menu-thumb" src="{{ room.image }}" alt="">
-						<div class="chat-info">
-							<h5><b>{{ room.name }}</b><span class="timestamp">{{ room.latest_message.created_at }}</span></h5>
-							<h6><span class="msg" id="latest{{ room.pk }}">{% if room.has_messages %}
-							{{ room.latest_message.author }}: {{ room.latest_message.text }}{% else %}<i>no messages</i>{% endif %}</span>
-							</h6>
-						</div>	
-					</li>
+					{% if in_chats %}
+					{% for chat in chats %}
+					{% include "templates/chat_list_item.html" %}
 					{% endfor %}
+					{% else %}
+					<div class="text-center"><i>You're not in any conversations yet! Join a chatroom or create your own?</i></div>
+					{% endif %}
 				</ul>
 				<div class="room-actions">
-					<button id="button-join-room">Join room</button>
-					<button id="button-create-room">Create room</button>
+					<button id="button-join-room" class="button">Join room</button>
+					<button id="button-create-room" class="button">Create room</button>
 				</div>
 			</div>
 
-			<div class="col-sm-9 chat-area">
-					<nav class="navbar navbar-default chat-name-bar">
-						<div class="navbar-container">
-
-							<div id="navbar" class="navbar-collapse collapse">
+			<div class="chat-area">
+					<nav class="open-room-bar">
+						<div class="bar-content">
+							<div id="navbar">
 							</div>
-
 						</div>					
 					</nav>
 
@@ -75,15 +66,13 @@
 					<div class="text-center" id="id_choose"><i>Choose a chat to start messaging!</i></div>
 				</div>
 				<div class="write-section">
-					<textarea class="chat-input" id="message_text"></textarea>
-					<button class="send-button" id="send_button">Send</button>
+					<textarea id="message_text"></textarea>
+					<button class="button" id="send_button">Send</button>
 				</div>
 			</div>
-		</div>
 	</div>
 	<!-- The Modal -->
 
-{% include "templates/main.js" %}
 
 </body>
 

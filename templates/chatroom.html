@@ -1,21 +1,18 @@
 {% load static %}
-<button class="chat-menu-button">More chatrooms</button>
+<button class="chat-menu-button button">More chatrooms</button>
 
-<button class="join-button" id="id_join_{{ pk }}">
+<button class="button join" id="id_join_{{ pk }}">
 {% if not in_room %}Join{% else %}Leave{% endif %}
 </button>
 <div class="chat-info-div">
 	<div class="chat-info-upper">
-		<div class="chat-info-upper-right">
-			<div class="">
-				<h1>{{ name }}</h1>
-			</div>
-			<div>
-				<h6>{{ description }}</h6>
-			</div>
+		<div>
+			<h1>{{ name }}</h1>
+			<h6><i>Created by {{ creator }}</i></h6>
+			<h6>{{ description }}</h6>
 		</div>
-		<div class="chat-info-upper-left">
-			<img class="chatroom-image" src="{{ chatroom.image }}">
+		<div>
+			<img src="{{ chatroom.image }}">
 
 			{% if is_admin == True or is_creator == True %}
 			<form class="form-inline" id="image-form-chat" action="{% url 'upload-chat-image' chatroom.pk %}" method="post" enctype="multipart/form-data">{% csrf_token %}
@@ -33,14 +30,27 @@
 	<div class="chat-info-lower">
 		<div class="chat-info-lower-left">
 			<h4>Chat members</h4>
+			<div class="chat-info-members">
 			<ul>
 				{% for user in users %}
 				<li id="{{ chatroom.pk }}{{ user.user.username }}">
 					<img src={{ user.image }}>
 					{{ user.user.username }}
+					{% if is_admin == True or is_creator == True%}
+					{% if user.user != request.user %}
+					<button class="button-ban tip" id="id_ban_{{ chatroom.pk }}_{{ user.pk }}">
+					<span class="tooltiptext">Ban user</span>
+					<img src="{% static 'images/trash.png' %}"></button>
+					<button class="button-admin tip" id="id_admin_{{ chatroom.pk }}_{{ user.pk }}">
+					<span class="tooltiptext">Make user admin</span>
+					<img src="{% static 'images/star-grey.png'%}">
+					</button>
+					{% endif %}
+					{% endif %}
 				</li>
 				{% endfor %}
 			</ul>
+			</div>
 		</div>
 
 		<div class="chat-info-lower-right">
@@ -94,11 +104,19 @@
 			})
 		})
 	})
+
+	$("#id_ban_{{ pk }}_{{ user.pk }}").click(function(e) {
+		sendRoomAction("ban", {{ pk }}, {{ user.pk }});
+	})
+
+	$("#id_admin_{{ pk }}_{{ user.pk }}").click(function(e) {
+		sendRoomAction("admin", {{ pk }}, {{ user.pk }});
+	})
 	{% endfor %}
 
 	$("#id_join_{{ pk }}").click(function() {
 		{% if not in_room %}
-		$.get("{% url 'join-chatroom' id=pk %}")
+		sendRoomAction("join", {{ pk }}, "")
 		{% else %}
 		$.get("{% url 'leave-chatroom' id=pk %}")
 		$("#myModal").css("display", "none");
