@@ -11,9 +11,10 @@
 			<h6><i>Created by {{ creator }}</i></h6>
 			<h6>{{ description }}</h6>
 		</div>
+		
 		<div>
-			<img src="{{ chatroom.image }}">
-
+			<img src="{% static "images/default.jpg" %}">
+			<!-- uploading images not implemented for now
 			{% if is_admin == True or is_creator == True %}
 			<form class="form-inline" id="image-form-chat" action="{% url 'upload-chat-image' chatroom.pk %}" method="post" enctype="multipart/form-data">{% csrf_token %}
 			    <p>
@@ -23,7 +24,9 @@
 			    </p>
 			</form>			
 			{% endif %}
+		-->	
 		</div>
+		
 
 	</div>
 

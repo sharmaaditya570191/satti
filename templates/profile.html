@@ -7,7 +7,9 @@
 	<button id="id_private_{{ username }}" class="join-button">Message</button>
 	{% endif %}
 	<div class="profile-image">
-		<img src="{{ chatuser.image }}">
+		<img src="{% static "images/default.jpg" %}">
+		<!-- Uploading images not implemented for now
+
 		{% if chatuser.user == request.user %}
 		<form class="form-inline" id="image-form" action="{% url 'upload-image' %}" method="post" enctype="multipart/form-data">{% csrf_token %}
 		    <p>
@@ -17,6 +19,8 @@
 		    </p>
 		</form>
 		{% endif %}
+		
+		-->
 	</div>
 	<div class="profile-username">
 		<h1>{{ chatuser.user.username }}</h1>
