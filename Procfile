@@ -1,0 +1,1 @@
+web: gunicorn sattisite.wsgi:application --log-file -
