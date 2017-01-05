@@ -168,7 +168,7 @@ $(document).ready(function() {
         $(".write-section").css("display", "block")
         $(".open-room-bar").css("display", "block")
         $(".open-room-bar").html("<div class='bar-content'" + 
-          " id='room-name-{{ room.pk }}'><img src={{ room.img_url }}><b>{{ room.name }}" + 
+          " id='room-name-{{ room.pk }}'><img src={% static "images/default.jpg" %}><b>{{ room.name }}" + 
           "</b><div id='id_online_{{ room.pk }}'>{{ room.online }}</div></div>")
 
    		$("#room-name-{{ room.pk }}").click(function(e) {
