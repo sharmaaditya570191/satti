@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from satti import views, settings
+from satti import views
 from django.contrib.auth import views as auth_views
 from django.conf.urls import url, include
-from django.conf import settings as conf_settings
+from django.conf import settings
 
 urlpatterns = [
     url(r'^$', views.main),
