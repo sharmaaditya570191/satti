@@ -1,71 +1,49 @@
 {% load static %}
 <script type="text/javascript">
-$(document).ready(function() {
 
-  var username = "{{ request.user.username }}"
-  var i;
-  var messages = ""
-  var socket = new WebSocket("ws://" + window.location.host);
+var socket = new WebSocket("ws://" + window.location.host);
 
-  $(".msg").dotdotdot({});
+var my_profile = '';
+var choose = $("#id_choose");
+var roomDict = {}
+var i;
 
-  socket.onmessage = function(e) {
-    data = JSON.parse(e.data);
-    room = data.room
-    
-    if("connect" in data) {
-     $.get("info/"+room+"/", function(data){
-      $("#id_online_"+room).html(data.online)
-      })
-     return;
-    };
-    if("disconnect" in data) {
-      $.get("info/"+room+"/", function(data){
-        $("#id_online_"+room).html(data.online)
-        })
-      return;
-    }
-    else {
-      roomDict[room].handleMessage(e.data);
-      }
-    }
+function appendMessage(html) {
+  $("#messages").append(html);
+  var objDiv = document.getElementById("chat_area");
+  objDiv.scrollTop = objDiv.scrollHeight;
+}
 
-  function sendRoomAction(action, room, target) {
-    var msg = {
-      room: room,
-      type: action,
-      target: target
-    }
-    socket.send(JSON.stringify(msg));
+function sendRoomAction(action, room, target) {
+  var msg = {
+    room: room,
+    type: action,
+    target: target
   }
+  socket.send(JSON.stringify(msg));
+}
 
-  function appendMessage(html) {
-    $("#messages").append(html);
-    var objDiv = document.getElementById("chat_area");
-    objDiv.scrollTop = objDiv.scrollHeight;
-  }
+function room(id) {
+  this.id = id
+  this.socket = socket;
+  this.messages = ""
+  this.typed = ""
+  var self = this;
+  $.get("chat/" + this.id + "/", function(data) {
+    self.messages += data;
+  })
 
-  function room(id) {
-    this.id = id
-    this.socket = socket;
-    this.messages = ""
-    this.typed = ""
-    var self = this;
-    $.get("chat/" + this.id + "/", function(data) {
-      self.messages += data;
-    })
-
-    this.handleMessage = function(data) {
-      date = new Date().toISOString()
-      data = JSON.parse(data);
-      type = data.type;
-      date = new Date().toISOString()
+  this.handleMessage = function(data) {
+    date = new Date().toISOString()
+    data = JSON.parse(data);
+    type = data.type;
+    date = new Date().toISOString()
       
-      switch(type) {
-        case "message": {
+    switch(type) {
+      case "message": {
           $("#no-messages-"+this.id).css("display", "none");
           var html = `<li class="message"><span><img src=`
-          + `${window.location.href}image/${data.user}/`
+          + `"{% static 'images/default.jpg' %}"`
           + `class="pointer ${data.user}"></span>`
           + `<span class="message-span"><div><h5>`
           + `${data.content}</h5></div>`
@@ -85,6 +63,7 @@ $(document).ready(function() {
           $("#id_timestamp_"+this.id).html(date.slice(11,16))
           break;
         }
+
         case "ban": {
           $("#no-messages-"+this.id).css("display", "none");
           var html = `<li class="room-notify"><b>`
@@ -111,7 +90,20 @@ $(document).ready(function() {
             appendMessage(html);
           }
           break;
-      }
+        }
+
+        case "leave": {
+          var html = `<li class="room-notify"><b>${data.user} left the room`
+                    + `</b></li>`
+          this.messages += html;
+          $("#latest"+this.id).html(`${data.user} left the room`);
+          $("#"+this.id).parent().prepend($("#"+this.id))
+          $("#id_timestamp_"+this.id).html(date.slice(11,16))
+          if(i==this.id) {         
+            appendMessage(html);
+          }
+          break;
+        }
     }
     
 
@@ -128,15 +120,16 @@ $(document).ready(function() {
         $("#latest"+this.id).html("{{ request.user }}" + ': ' + txt);
         $("#message_text").val('');
       }
-  } 
+    } 
 }
 
-   var my_profile = '';
-   var choose = $("#id_choose");
-   var roomDict = {}
-   {% for room in chats %}
 
-   roomDict[{{ room.pk }}] = new room({{ room.pk }});
+
+$(document).ready(function() {
+
+  {% for room in chats %}
+
+  roomDict[{{ room.pk }}] = new room({{ room.pk }});
 
    $("#{{ room.pk }}").click(function(e) {
         e.preventDefault();
@@ -145,13 +138,13 @@ $(document).ready(function() {
         }
         i = {{ room.pk }};
         $("#message_text").val(roomDict[{{ room.pk }}].typed)
-
+        
         sendRoomAction("open", {{ room.pk }}, "");
 
         if($(window).width() <= 640) {
-        	$(".menu").css("display", "none")
-        	$(".chat-area").css("display", "inline")
-        	$(".back-btn").css("display", "inline")
+          $(".menu").css("display", "none")
+          $(".chat-area").css("display", "inline")
+          $(".back-btn").css("display", "inline")
         }
         
         $("#chat_area").html('<ul class="list-unstyled" id="messages">'
@@ -172,18 +165,48 @@ $(document).ready(function() {
           " id='room-name-{{ room.pk }}'><img src={% static "images/default.jpg" %}><b>{{ room.name }}" + 
           "</b><div id='id_online_{{ room.pk }}'>{{ room.online }}</div></div>")
 
-   		$("#room-name-{{ room.pk }}").click(function(e) {
-   			e.preventDefault();
-   			$.get(window.location.href + "chatroom/{{ room.pk }}/", function(data) {
-   			$(".modal-content").html(data);
-   			$("#myModal").css("display", "block");
-   		})
-   		
-   	})
+      $("#room-name-{{ room.pk }}").click(function(e) {
+        e.preventDefault();
+        $.get(window.location.href + "chatroom/{{ room.pk }}/", function(data) {
+        $(".modal-content").html(data);
+        $("#myModal").css("display", "block");
+      })
+      
+    })
 
     });
     
     {% endfor %}
+
+  var username = "{{ request.user.username }}"
+  var messages = ""
+  
+  $(".msg").dotdotdot({});
+
+  socket.onmessage = function(e) {
+    data = JSON.parse(e.data);
+    room = data.room
+    
+    if("connect" in data) {
+     $.get("info/"+room+"/", function(data){
+      $("#id_online_"+room).html(data.online)
+      })
+     return;
+    };
+    if("disconnect" in data) {
+      $.get("info/"+room+"/", function(data){
+        $("#id_online_"+room).html(data.online)
+        })
+      return;
+    }
+    else {
+      roomDict[room].handleMessage(e.data);
+      }
+    }
+
+
+
+
 
     //send message with enter key
 
