@@ -71,6 +71,16 @@ def chat_info_json(request, id):
 	return JsonResponse(chat_list_item(id, request.user))
 
 def chat_list_item(pk, user):
+	"""
+	Helper function for getting contextual information about a chatroom.
+
+	Arguments:
+		pk -- room primary key (type: Int)
+		user -- user (type django.auth.User)
+
+	Return:
+		A dict
+	"""
 	chatroom = ChatRoom.objects.get(pk=pk)
 	time = list_timestamp(chatroom.modified)
 	has_msg = chatroom.has_messages()
@@ -111,8 +121,8 @@ def chat_list_item(pk, user):
 			data['last_msg_author'] = last_msg.author.user.username
 			return data
 	else:
-		return {"name": name, "img_url": img_url, "has_msg": has_msg, "pk": pk,
-			"last_msg_time": time}
+		return {"has_msg": has_msg, "img_url": img_url, "last_msg_time": time,
+			"name": name, "online": online, "private": private, "pk": pk}
 
 def chat_list_item_with_messages(chatroom, user):
 	data = chat_list_item(chatroom.pk, user)
