@@ -121,12 +121,12 @@
 		{% if not in_room %}
 		sendRoomAction("join", {{ pk }}, "")
 		{% else %}
-		$.get("{% url 'leave-chatroom' id=pk %}")
+		sendRoomAction("leave", {{ pk }}, "")
 		$("#myModal").css("display", "none");
 		$("#{{ pk }}").remove();
 		$("#chat_area").html(choose);
 		$(".write-section").css("display", "none");
-        $(".chat-name-bar").css("display", "none");
+        $(".open-room-bar").css("display", "none");
 		{% endif %}
 	})
 </script>

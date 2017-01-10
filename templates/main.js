@@ -42,6 +42,7 @@ function room(id) {
     switch(type) {
       case "message": {
           $("#no-messages-"+this.id).css("display", "none");
+          
           var html = `<li class="message"><span><img src=`
           + `"{% static 'images/default.jpg' %}"`
           + `class="pointer ${data.user}"></span>`
@@ -64,45 +65,15 @@ function room(id) {
           break;
         }
 
-        case "ban": {
-          $("#no-messages-"+this.id).css("display", "none");
-          var html = `<li class="room-notify"><b>`
-                     + `${data.user} got banned!</b></li>`
-          this.messages += html
-          $("#latest"+this.id).html(`${data.user} got banned!`)
-          $("#"+this.id).parent().prepend($("#"+this.id))
-          $("#id_timestamp_"+this.id).html(date.slice(11,16))
-          if(i==this.id) {         
-            appendMessage(html);
-          }
-          break;
-        }
-
-        case "join": {
-          $("#no-messages-"+this.id).css("display", "none");
-          var html = `<li class="room-notify"><b>${data.user} joined the room`
+        case "notify": {
+          var html = `<li class="room-notify"><b>${data.content}`
                     + `</b></li>`
-          this.messages += html;
-          $("#latest"+this.id).html(`${data.user} joined the room`);
+          $("#latest"+this.id).html(data.content);
           $("#"+this.id).parent().prepend($("#"+this.id))
           $("#id_timestamp_"+this.id).html(date.slice(11,16))
           if(i==this.id) {         
             appendMessage(html);
           }
-          break;
-        }
-
-        case "leave": {
-          var html = `<li class="room-notify"><b>${data.user} left the room`
-                    + `</b></li>`
-          this.messages += html;
-          $("#latest"+this.id).html(`${data.user} left the room`);
-          $("#"+this.id).parent().prepend($("#"+this.id))
-          $("#id_timestamp_"+this.id).html(date.slice(11,16))
-          if(i==this.id) {         
-            appendMessage(html);
-          }
-          break;
         }
     }
     
