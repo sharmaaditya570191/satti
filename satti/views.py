@@ -21,8 +21,27 @@ def get_chatuser(user):
 
 @login_required
 def chat(request, id):
+	"""
+	Display individual chatroom
+
+	**Context**
+
+	``ìd``
+		Primary key of the chatroom
+		type: Int
+	``room_name``
+		Name of the room
+		type: String
+	``messages``
+		Messages in the room to be rendered
+		type: QuerySet[ChatMessage]
+
+	**Template:**
+
+	:template:`templates/chat.html`
+	"""
 	room = ChatRoom.objects.get(pk=id)
-	return render(request, 'templates/new_chat.html', context = {
+	return render(request, 'templates/chat.html', context = {
 		'id': room.pk,
 		'room_name': room.name,
 		'messages': ChatMessage.objects.filter(room=room).order_by('created_at'),
@@ -121,7 +140,7 @@ def private_chat(request, username):
 	if not ChatRoom.objects.filter(name__in=names).exists():
 		create_private_chat(request, username)
 	room = ChatRoom.objects.get(name=name)
-	return render(request, 'templates/new_chat.html', context = {
+	return render(request, 'templates/chat.html', context = {
 		'id': room.pk,
 		'room_name': username,
 		'messages': ChatMessage.objects.filter(room=room),
