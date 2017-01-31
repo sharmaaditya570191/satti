@@ -7,4 +7,4 @@ class ImageUploadForm(forms.Form):
 class RoomCreationForm(forms.ModelForm):
 	class Meta:
 		model = ChatRoom
-		fields = ['name', 'description', 'image']
+		fields = ['name', 'description']
