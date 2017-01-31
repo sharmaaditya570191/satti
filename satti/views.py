@@ -179,7 +179,7 @@ def main(request):
 	chatuser.connect()
 	chatuser.save()
 	chats = chat_list(request)
-	return render(request, 'templates/newest_index.html', context = {
+	return render(request, 'templates/index.html', context = {
 		"chats": chats,
 		"in_chats": len(chats)>0
 		})
