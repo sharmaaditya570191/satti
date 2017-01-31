@@ -37,21 +37,10 @@ def ws_message(message):
         open_room(room, author)
 
     elif action_type == "join":
-        if not room.is_banned(author):            
-            group.add(message.reply_channel)
-            group.send({"text": json.dumps({
-                    "type": "join",
-                    "user": author.user.username,
-                    "room": room_id
-                    })
-                })
-            room.users.add(author)
-            author.chatrooms.add(room)
-            ChatMessage.objects.create(
-                room=room,
-                text=author.user.username + " joined the room",
-                notification=True
-                )
+        join(room, author, message.reply_channel)
+
+    elif action_type == "leave":
+        leave(room, author)
 
     elif room.is_creator(author) or room.is_admin(author):
         if action_type == "ban":
@@ -72,6 +61,7 @@ def ws_message(message):
         elif action_type == "admin":
             chatuser = ChatUser.objects.get(pk=read["target"])
             room.set_admin(chatuser)
+            send_notify(room, "{} is now an admin".format(chatuser), chatuser)
     return
 
 @channel_session_user
@@ -81,7 +71,8 @@ def ws_disconnect(message):
     rooms = author.chatrooms
     for room in rooms.all():
         room.users_online.remove(author)
-        Group("chat-%s" % room.pk).send({"text": json.dumps({"disconnect": message.user.username})})
+        Group("chat-%s" % room.pk).send({"text": 
+            json.dumps({"disconnect": message.user.username})})
         Group("chat-%s" % room.pk).discard(message.reply_channel)
         room.save()
     author.save()
@@ -108,38 +99,43 @@ def send_message(room, author, text):
             })
         })
 
+def send_notify(room, text, author):
+    new_message = ChatMessage.objects.create(
+        room=room,
+        text=text,
+        notification=True,
+        author=author
+        )
+    room.add_message()
+    Group("chat-%s" % room.pk).send({
+        "text": json.dumps({
+            "type": "notify",
+            "content": text,
+            "room": room.pk
+            })
+        })
+
 def ban(room, admin, banned):
     room.ban(banned)
-    ChatMessage.objects.create(
-        room=room,
-        text=admin.user.username + " banned " + banned.user.username,
-        notification=True
-    )
-    Group("chat-%s" % room.pk).send({"text": json.dumps({
-        "type": "ban",
-        "user": banned.user.username,
-        "admin": admin.user.username,
-        "room": room.pk
-        })
-    })
+    send_notify(room, "{} banned {}".format(admin, banned), admin)
 
-def join(room, chatuser, reply_channel, group):
+def join(room, chatuser, reply_channel):
     if not room.is_banned(chatuser):
         room.users.add(chatuser)
         chatuser.chatrooms.add(room)
         group = Group("chat-%s" % room.pk)
         group.add(reply_channel)
-        group.send({ "text": json.dumps({
-                "type": "join",
-                "user": chatuser.user.username,
-                "room": room.pk
-            })
-        })
+        send_notify(room, "{} joined the room".format(chatuser), chatuser)
+
+def leave(room, chatuser):
+    room.users.remove(chatuser)
+    chatuser.chatrooms.remove(room)
+    send_notify(room, "{} left the room".format(chatuser), chatuser)
 
 def open_room(room, chatuser):
     #mark all messages as read
     chatuser.read(room)
-    #send notification
+    #send signal to room
     Group("chat-%s" % room.pk).send({"text": json.dumps({
         "type": "open",
         "user": chatuser.user.username,
