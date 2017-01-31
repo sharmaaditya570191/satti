@@ -9,7 +9,7 @@
 	<div class="joinable-list">
 	<ul>
 		{% for room in joinable_rooms %}
-		<li id="joinable-{{ room.pk }}"><img src="{{ room.image }}">{{ room.name }}</li>
+		<li id="joinable-{{ room.pk }}"><img src="{{ static "images/default.jpg" }}">{{ room.name }}</li>
 		{% endfor %}
 	</ul>
 	</div>
