@@ -128,5 +128,10 @@
 		$(".write-section").css("display", "none");
         $(".open-room-bar").css("display", "none");
 		{% endif %}
+		
+		//this could be done better...
+		setTimeout(function() {
+			window.location.reload();
+		}, 100);
 	})
 </script>
