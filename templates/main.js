@@ -36,7 +36,6 @@ function room(id) {
   this.handleMessage = function(data) {
     date = new Date().toISOString()
     type = data.type;
-    alert(type);
     $("#no-messages-"+this.id).css("display", "none");
 
     switch(type) {
