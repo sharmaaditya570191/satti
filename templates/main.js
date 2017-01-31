@@ -35,14 +35,12 @@ function room(id) {
 
   this.handleMessage = function(data) {
     date = new Date().toISOString()
-    data = JSON.parse(data);
     type = data.type;
-    date = new Date().toISOString()
-      
+    alert(type);
+    $("#no-messages-"+this.id).css("display", "none");
+
     switch(type) {
       case "message": {
-          $("#no-messages-"+this.id).css("display", "none");
-          
           var html = `<li class="message"><span><img src=`
           + `"{% static 'images/default.jpg' %}"`
           + `class="pointer ${data.user}"></span>`
@@ -57,7 +55,8 @@ function room(id) {
 
           if(i==this.id) {         
             appendMessage(html);
-          } else {
+          } 
+          else {
             $("#"+this.id).effect("highlight", {color: '#add8e6'}, 2000);
           }
           $("#"+this.id).parent().prepend($("#"+this.id))
@@ -65,7 +64,7 @@ function room(id) {
           break;
         }
 
-        case "notify": {
+      case "notify": {
           var html = `<li class="room-notify"><b>${data.content}`
                     + `</b></li>`
           $("#latest"+this.id).html(data.content);
@@ -76,8 +75,6 @@ function room(id) {
           }
         }
     }
-    
-
     }
     this.sendMessage = function() {
       var txt = $("#message_text").val()
@@ -171,7 +168,7 @@ $(document).ready(function() {
       return;
     }
     else {
-      roomDict[room].handleMessage(e.data);
+      roomDict[room].handleMessage(data);
       }
     }
 
