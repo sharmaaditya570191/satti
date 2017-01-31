@@ -37,7 +37,7 @@
 			<ul>
 				{% for user in users %}
 				<li id="{{ chatroom.pk }}{{ user.user.username }}">
-					<img src={{ user.image }}>
+					<img src={% static "images/default.jpg" %}>
 					{{ user.user.username }}
 					{% if is_admin == True or is_creator == True%}
 					{% if user.user != request.user %}
