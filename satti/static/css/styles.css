@@ -233,6 +233,11 @@ textarea {
     .modal .modal-content .join {
       position: absolute;
       right: 0; }
+    .modal .modal-content .new-chat-div {
+      width: 80%;
+      height: 80%;
+      margin-top: 10%;
+      margin-left: 10%; }
 
 .profile-content {
   text-align: center;
