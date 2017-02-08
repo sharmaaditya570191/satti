@@ -187,10 +187,13 @@ def main(request):
 def login(request):
 	username = request.POST['username']
 	password = request.POST['password']
-	user = authenticate(username=username, password=password)
+	try:
+		user = authenticate(username=username, password=password)
 	if user is not None:
 		auth_login(request, user)
 	else:
+		if User.objects.exists(username=username):
+			return redirect('/')
 		user = User.objects.create_user(username, '', password)
 		chatuser = ChatUser.objects.create(user=user)
 		auth_login(request, user)
