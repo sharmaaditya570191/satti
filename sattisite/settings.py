@@ -25,10 +25,11 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'lgrc@(m@3cc*&6r)yeki+209#6#ql4#3ura31fczs3=f2d#pn$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ALLOWED_HOSTS = ['morning-meadow-59619.herokuapp.com']
 
