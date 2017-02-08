@@ -187,8 +187,7 @@ def main(request):
 def login(request):
 	username = request.POST['username']
 	password = request.POST['password']
-	try:
-		user = authenticate(username=username, password=password)
+	user = authenticate(username=username, password=password)
 	if user is not None:
 		auth_login(request, user)
 	else:
