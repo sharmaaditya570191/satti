@@ -12,6 +12,7 @@ from django.shortcuts import get_object_or_404
 from django.template import Context, loader
 from django.template.loader import render_to_string
 from .forms import ImageUploadForm, RoomCreationForm
+from .helpers import *
 from django.utils import timezone
 import os.path
 from datetime import datetime
@@ -49,7 +50,7 @@ def chat(request, id):
 		})
 
 def json_messages(request, pk):
-	chatuser = ChatUser.objects.get(user=request.user)
+	chatuser = get_chatuser(request.user)
 	room = ChatRoom.objects.get(pk=pk)
 	content = {"data": []}
 	if chatuser.in_room(room):
@@ -132,16 +133,14 @@ def chat_list_item_with_messages(chatroom, user):
 		data["messages"].append({"user": message.author,
 		"text": message.text, "time": iso_timestamp(message.created_at)})
 
-
 def render_chat_list_item(request, pk):
 	context = chat_list_item(pk, request.user)
 	return render(request, "templates/chat_list_item.html", context)
 
 def chat_list(request):
 	chatuser = get_chatuser(request.user)
-	chats = chatuser.chatrooms.all().order_by('-modified')
-	chats = [chat_list_item(chat.pk, request.user) for chat in chats]
-	
+	chatrooms = chatuser.chatrooms.all().order_by('-modified')
+	chats = [chat_list_item(chat.pk, request.user) for chat in chatrooms]
 	return chats
 
 def private_chat(request, username):

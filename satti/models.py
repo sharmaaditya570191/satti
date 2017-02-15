@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.utils import timezone
 from datetime import datetime
+from .helpers import list_timestamp
 
 PROFILE_TEXT = "This is my profile text. Isn't it fun?"
 
@@ -27,7 +28,6 @@ class ChatRoom(models.Model):
 	banned = models.ManyToManyField('ChatUser', related_name="banned_in")
 
 	def add_message(self):
-		print("ADDING MESSaGES")
 		self.modified = timezone.now()
 		self.save()
 
@@ -49,7 +49,7 @@ class ChatRoom(models.Model):
 	def latest_message(self):
 		return ChatMessage.objects.filter(room=self).latest('created_at')
 
-	def nr_online(self):
+	def users_online(self):
 		return self.users_online.count()
 
 	def ban(self, chatuser):
@@ -108,16 +108,3 @@ class ChatMessage(models.Model):
 
 	def set_read(self, chatuser):
 		self.read_by.add(chatuser)
-
-def list_timestamp(time):
-	today = timezone.now()
-	days =(datetime.today().date() - time.date()).days
-	#days = (today - time).days
-	print(days)
-	day_of_year = today.timetuple().tm_yday
-	if days == 0:
-		return "{}".format(time.strftime("%H:%M"))
-	elif days == 1:
-		return "yesterday at {}".format(time.strftime("%H:%M"))
-	elif days < day_of_year:
-			return time.strftime("%d.%m.%y")
