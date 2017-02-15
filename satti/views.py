@@ -322,8 +322,7 @@ def iso_timestamp(time):
 	
 def list_timestamp(time):
 	today = datetime.now()
-	days =(datetime.today().date() - time.date()).days
-	#days = (today - time).days
+	days = (datetime.today().date() - time.date()).days
 	day_of_year = today.timetuple().tm_yday
 	if days == 0:
 		return "{}".format(time.strftime("%H:%M"))
