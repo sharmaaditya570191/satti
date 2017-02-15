@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def get_chatuser(user):
 	return ChatUser.objects.get(user=user)
 
