@@ -1,3 +1,3 @@
 #Sätti
 
-A simple browser chat app utilizing WebSockets written in Django and JavaScript.
+A simple browser chat app utilizing WebSockets made with Django and JavaScript.
