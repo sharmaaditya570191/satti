@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.utils import timezone
 from datetime import datetime
-from .helpers import list_timestamp
 
 PROFILE_TEXT = "This is my profile text. Isn't it fun?"
 
@@ -49,7 +48,7 @@ class ChatRoom(models.Model):
 	def latest_message(self):
 		return ChatMessage.objects.filter(room=self).latest('created_at')
 
-	def users_online(self):
+	def get_users_online(self):
 		return self.users_online.count()
 
 	def ban(self, chatuser):
@@ -90,6 +89,7 @@ class ChatUser(models.Model):
 	Gets the last seen timestamp in as a string
 	"""
 	def get_last_seen(self):
+		from .helpers import list_timestamp
 		if self.last_seen is not None:
 			return list_timestamp(self.last_seen)
 		else: return "never"

@@ -1,4 +1,5 @@
 from datetime import datetime
+from satti.models import ChatMessage, ChatRoom, ChatUser
 
 def get_chatuser(user):
 	return ChatUser.objects.get(user=user)
@@ -31,7 +32,7 @@ def chat_list_item(pk, user):
 		private = False
 		name = chatroom.name
 		img_url = chatroom.image.url
-		online_count = chatroom.users_online.count()
+		online_count = chatroom.get_users_online()
 		if(online_count > 1):
 			online = "{} users online (including you)".format(online_count)
 		else:
