@@ -12,7 +12,6 @@ from django.shortcuts import get_object_or_404
 from django.template import Context, loader
 from django.template.loader import render_to_string
 from .forms import ImageUploadForm, RoomCreationForm
-from django.utils import timezone
 import os.path
 
 @login_required

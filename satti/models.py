@@ -5,16 +5,16 @@ from django.utils import timezone
 from datetime import datetime
 
 PROFILE_TEXT = "This is my profile text. Isn't it fun?"
-
 CHATROOM_TEXT = "This is the default chatroom description. It is a bit longe"\
                 "r than the default text for profiles, and that's intentional."
+DEFAULT_IMAGE_PATH = "images/default.jpg"
 
 class ChatRoom(models.Model):
 	def __str__(self):
 		return self.name
 
 	name = models.CharField(max_length=100)
-	image = models.ImageField(upload_to='images/', default='images/default.jpg')
+	image = models.ImageField(upload_to='images/', default=DEFAULT_IMAGE_PATH)
 	max_users = models.PositiveSmallIntegerField(default=50)
 	description = models.TextField(max_length=200, blank=True, default=CHATROOM_TEXT)
 	created_at = models.DateTimeField(auto_now_add=True, editable=False)
@@ -64,7 +64,7 @@ class ChatRoom(models.Model):
 class ChatUser(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
 	chatrooms = models.ManyToManyField(ChatRoom, blank=True)
-	image = models.ImageField(upload_to='images/', default='images/default.jpg')
+	image = models.ImageField(upload_to='images/', default=DEFAULT_IMAGE_PATH)
 	profile_text = models.CharField(default=PROFILE_TEXT, max_length=200)
 	contacts = models.ManyToManyField("self", blank=True, related_name="contacts")
 	online = models.BooleanField(default=False)
